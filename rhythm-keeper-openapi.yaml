@@ -89,6 +89,13 @@ paths:
           application/json:
             schema:
               type: object
+              properties:
+                title:
+                  type: string
+                notes:
+                  type: string
+                due:
+                  type: string
       responses:
         "200":
           description: Task updated
@@ -165,6 +172,25 @@ paths:
           application/json:
             schema:
               type: object
+              properties:
+                summary:
+                  type: string
+                description:
+                  type: string
+                start:
+                  type: object
+                  properties:
+                    dateTime:
+                      type: string
+                    timeZone:
+                      type: string
+                end:
+                  type: object
+                  properties:
+                    dateTime:
+                      type: string
+                    timeZone:
+                      type: string
       responses:
         "200":
           description: Event updated
@@ -192,5 +218,6 @@ components:
           scopes:
             https://www.googleapis.com/auth/calendar: Manage calendar
             https://www.googleapis.com/auth/tasks: Manage tasks
+  schemas: {}
 security:
   - googleOAuth: []
