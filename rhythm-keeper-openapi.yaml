@@ -219,6 +219,11 @@ components:
           scopes:
             https://www.googleapis.com/auth/calendar: Manage calendar
             https://www.googleapis.com/auth/tasks: Manage tasks
-  schemas: {}
+  schemas:
+    Placeholder:
+      type: object
+      properties:
+        dummy:
+          type: string
 security:
   - googleOAuth: []
