@@ -1,3 +1,14 @@
+Edit actions
+Let your GPT retrieve information or take actions outside of ChatGPT.
+Learn more.
+Authentication
+OAuth
+
+Schema
+
+Import from URL
+
+Examples
 openapi: 3.1.0
 info:
   title: Rhythm Keeper – Calendar & Tasks Sync
@@ -28,7 +39,6 @@ paths:
       responses:
         "200":
           description: Successful response
-
   /tasks/v1/lists/{tasklist}/tasks:
     post:
       operationId: createTask
@@ -55,3 +65,15 @@ paths:
       responses:
         "200":
           description: Successful response
+
+
+Format
+Available actions
+Name	Method	Path	
+listTaskLists	get	/tasks/v1/users/@me/lists	
+Test
+createTaskList	post	/tasks/v1/users/@me/lists	
+Test
+createTask	post	/tasks/v1/lists/{tasklist}/tasks	
+Test
+Privacy policy
