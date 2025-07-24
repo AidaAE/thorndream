@@ -1,14 +1,3 @@
-Edit actions
-Let your GPT retrieve information or take actions outside of ChatGPT.
-Learn more.
-Authentication
-OAuth
-
-Schema
-
-Import from URL
-
-Examples
 openapi: 3.1.0
 info:
   title: Rhythm Keeper – Calendar & Tasks Sync
@@ -39,7 +28,20 @@ paths:
       responses:
         "200":
           description: Successful response
+
   /tasks/v1/lists/{tasklist}/tasks:
+    get:
+      operationId: listTasks
+      summary: List tasks
+      parameters:
+        - name: tasklist
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "200":
+          description: Successful response
     post:
       operationId: createTask
       summary: Create a new task
@@ -66,14 +68,129 @@ paths:
         "200":
           description: Successful response
 
+  /tasks/v1/lists/{tasklist}/tasks/{task}:
+    patch:
+      operationId: updateTask
+      summary: Update a task
+      parameters:
+        - name: tasklist
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: task
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200":
+          description: Task updated
+    delete:
+      operationId: deleteTask
+      summary: Delete a task
+      parameters:
+        - name: tasklist
+          in: path
+          required: true
+          schema:
+            type: string
+        - name: task
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "204":
+          description: Task deleted
 
-Format
-Available actions
-Name	Method	Path	
-listTaskLists	get	/tasks/v1/users/@me/lists	
-Test
-createTaskList	post	/tasks/v1/users/@me/lists	
-Test
-createTask	post	/tasks/v1/lists/{tasklist}/tasks	
-Test
-Privacy policy
+  /calendar/v3/calendars/primary/events:
+    get:
+      operationId: listEvents
+      summary: List calendar events
+      responses:
+        "200":
+          description: Events retrieved
+    post:
+      operationId: createEvent
+      summary: Create calendar event
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                summary:
+                  type: string
+                description:
+                  type: string
+                start:
+                  type: object
+                  properties:
+                    dateTime:
+                      type: string
+                    timeZone:
+                      type: string
+                end:
+                  type: object
+                  properties:
+                    dateTime:
+                      type: string
+                    timeZone:
+                      type: string
+      responses:
+        "200":
+          description: Event created
+
+  /calendar/v3/calendars/primary/events/{eventId}:
+    patch:
+      operationId: updateEvent
+      summary: Update calendar event
+      parameters:
+        - name: eventId
+          in: path
+          required: true
+          schema:
+            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+      responses:
+        "200":
+          description: Event updated
+    delete:
+      operationId: deleteEvent
+      summary: Delete calendar event
+      parameters:
+        - name: eventId
+          in: path
+          required: true
+          schema:
+            type: string
+      responses:
+        "204":
+          description: Event deleted
+
+components:
+  securitySchemes:
+    googleOAuth:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://accounts.google.com/o/oauth2/v2/auth
+          tokenUrl: https://oauth2.googleapis.com/token
+          scopes:
+            https://www.googleapis.com/auth/calendar: Manage calendar
+            https://www.googleapis.com/auth/tasks: Manage tasks
+security:
+  - googleOAuth: []
