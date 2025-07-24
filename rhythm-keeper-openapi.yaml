@@ -5,6 +5,7 @@ info:
   version: 1.0.0
 servers:
   - url: https://www.googleapis.com
+
 paths:
   /tasks/v1/users/@me/lists:
     get:
@@ -218,3 +219,6 @@ components:
           scopes:
             https://www.googleapis.com/auth/calendar: Manage calendar
             https://www.googleapis.com/auth/tasks: Manage tasks
+  schemas: {}
+security:
+  - googleOAuth: []
