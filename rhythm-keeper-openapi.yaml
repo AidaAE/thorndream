@@ -1,13 +1,57 @@
-requestBody:
-  required: true
-  content:
-    application/json:
-      schema:
-        type: object
-        properties:
-          title:
+openapi: 3.1.0
+info:
+  title: Rhythm Keeper – Calendar & Tasks Sync
+  description: Allows Rhythm Keeper to access, create, update, and delete Google Tasks and Google Calendar events.
+  version: 1.0.0
+servers:
+  - url: https://www.googleapis.com
+paths:
+  /tasks/v1/users/@me/lists:
+    get:
+      operationId: listTaskLists
+      summary: List task lists
+      responses:
+        "200":
+          description: Successful response
+    post:
+      operationId: createTaskList
+      summary: Create a new task list
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+      responses:
+        "200":
+          description: Successful response
+
+  /tasks/v1/lists/{tasklist}/tasks:
+    post:
+      operationId: createTask
+      summary: Create a new task
+      parameters:
+        - name: tasklist
+          in: path
+          required: true
+          schema:
             type: string
-          notes:
-            type: string
-          due:
-            type: string
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                title:
+                  type: string
+                notes:
+                  type: string
+                due:
+                  type: string
+      responses:
+        "200":
+          description: Successful response
