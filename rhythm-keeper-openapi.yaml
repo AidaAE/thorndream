@@ -218,9 +218,3 @@ components:
           scopes:
             https://www.googleapis.com/auth/calendar: Manage calendar
             https://www.googleapis.com/auth/tasks: Manage tasks
-  schemas:
-    MinimalObject:
-      type: object
-      properties:
-        placeholder:
-          type: string
