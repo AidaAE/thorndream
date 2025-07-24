@@ -219,8 +219,8 @@ components:
             https://www.googleapis.com/auth/calendar: Manage calendar
             https://www.googleapis.com/auth/tasks: Manage tasks
   schemas:
-    EmptyObject:
+    MinimalObject:
       type: object
-
-security:
-  - googleOAuth: []
+      properties:
+        placeholder:
+          type: string
