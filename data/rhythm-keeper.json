@@ -1,0 +1,290 @@
+{
+  "cycle_tracking": {
+    "last_period_start": "2025-09-05",
+    "cycle_length_days": 25,
+    "bleeding_days": 6,
+    "auto_calculate": true,
+    "override_option": true,
+    "phases": {
+      "menstrual": "days 1-6",
+      "follicular": "days 7-12",
+      "ovulatory": "days 13-16",
+      "luteal": "days 17-25"
+    }
+  },
+  "health_rhythm": {
+    "medications_supplements": {
+      "morning_empty_stomach": [
+        "Adderall XR 30 mg",
+        "Bupropion XL 300 mg",
+        "DHEA 5 mg",
+        "L-Arginine 2000 mg"
+      ],
+      "with_breakfast": [
+        "Ellura 36 mg PACs",
+        "Kirkland Daily Multivitamin",
+        "Inositol 500 mg",
+        "Ther-Biotic Probiotic"
+      ],
+      "midday_lunch": [
+        "Ashwagandha 600 mg",
+        "Kirkland Fish Oil 1–2 softgels",
+        "Curcumin Phytosome 1000 mg",
+        "Hyaluronic Acid 70 mg",
+        "Creatine (goal: daily with water)"
+      ],
+      "evening": [],
+      "bedtime": [
+        "Astaxanthin 6 mg",
+        "Progesterone 100 mg",
+        "Desvenlafaxine 100 mg",
+        "Magnesium Glycinate (1–2 caps)",
+        "Baclofen (as prescribed)"
+      ]
+    },
+    "pt_ot": {
+      "baseline": {
+        "frequency": "6x per day",
+        "duration": "2–5 minutes",
+        "examples": [
+          "posture check",
+          "breathing reset",
+          "light hammock swing",
+          "micro stretch"
+        ]
+      },
+      "assigned_focus": {
+        "monday": "hip mobility",
+        "tuesday": "lower back relief",
+        "wednesday": "shoulder & upper back release",
+        "thursday": "core strengthening",
+        "friday": "balance & stability",
+        "saturday": "full-body integration",
+        "sunday": "restorative care"
+      }
+    }
+  },
+  "weekly_rhythm": {
+    "monday": {
+      "tasks": [
+        "review balances",
+        "hip mobility PT",
+        "big bathroom clean (sinks priority)",
+        "family rest anchor"
+      ]
+    },
+    "tuesday": {
+      "tasks": [
+        "errands/travel",
+        "dropship research",
+        "lower back PT",
+        "laundry: family jeans & pants, misc loads"
+      ]
+    },
+    "wednesday": {
+      "tasks": [
+        "business push (Amazon/FBM listings, shipping)",
+        "CVS midweek shop",
+        "shoulder PT",
+        "laundry: bedding, mattress covers, bathroom mats",
+        "batch cooking (midweek refill)"
+      ]
+    },
+    "thursday": {
+      "tasks": [
+        "core PT",
+        "rebate store runs (Publix/Target)",
+        "digital uploads (Merch/KDP)",
+        "laundry: pool towels, heavy bath, kitchen, car towels"
+      ]
+    },
+    "friday": {
+      "tasks": [
+        "balance PT",
+        "FB listings + pricing checks",
+        "income tracking",
+        "batch cooking (prep weekend + school)",
+        "house setup for Saturday",
+        "laundry: Aidita wash + Vicente/Aida loads",
+        "kitchen island reset"
+      ]
+    },
+    "saturday": {
+      "tasks": [
+        "martial arts (Aidita & V)",
+        "laundry catch-up + uniforms",
+        "Aidita dry/fold & pack school clothes",
+        "errands",
+        "full-body PT",
+        "rotating area care (week1 playroom, week2 hammock, week3 office, week4 bedrooms/closets)"
+      ]
+    },
+    "sunday": {
+      "tasks": [
+        "restorative PT",
+        "succulent care",
+        "restorative care (bath/yoga)",
+        "house setup for Monday",
+        "family fun anchor",
+        "batch cooking if skipped",
+        "whole-house glance (last Sunday)"
+      ]
+    }
+  },
+  "house_care_focus": {
+    "weekly_priority": {
+      "monday": "master bathroom sinks",
+      "wednesday": "hallway & dining floors",
+      "friday": "kitchen island"
+    },
+    "rotating_secondary": {
+      "week1_saturday": "Aidita playroom",
+      "week2_saturday": "hammock area",
+      "week3_saturday": "Aida office",
+      "week4_saturday": "bedrooms & closets"
+    },
+    "monthly": "last Sunday = whole-house glance",
+    "prep_events": {
+      "before_school_breaks": [
+        "laundry reset",
+        "clear kitchen island",
+        "bathroom sinks & mirrors",
+        "dining/hallway floors",
+        "playroom reset"
+      ],
+      "before_travel": [
+        "catch-up laundry",
+        "empty trash",
+        "vacuum/sweep",
+        "clear fridge",
+        "reset bathroom/kitchen",
+        "fresh sheets/towels",
+        "stock pantry/freezer snacks",
+        "prep diffuser/candle"
+      ],
+      "goal": "return home feels better than a hotel"
+    },
+    "post_travel": [
+      "easy unpack",
+      "laundry same day",
+      "reset suitcase zone",
+      "rest & light meals"
+    ]
+  },
+  "business_engines": {
+    "amazon": {
+      "fba_fbm": {
+        "tasks": {
+          "wednesday": ["list & ship"],
+          "friday": ["pricing checks", "inventory review"]
+        }
+      },
+      "digital_products": {
+        "tasks": {
+          "monday": ["design ideas"],
+          "thursday": ["upload content"]
+        }
+      }
+    },
+    "facebook_marketplace": {
+      "tasks": {
+        "friday": ["update listings", "check pricing"]
+      }
+    },
+    "dropshipping": {
+      "tasks": {
+        "tuesday": ["supplier research"],
+        "thursday": ["test listings"]
+      }
+    },
+    "turo": {
+      "pre_rental": ["clean", "photo", "stock car"],
+      "post_rental": ["reset", "maintenance check"]
+    }
+  },
+  "finance_rhythm": {
+    "monday": ["review balances"],
+    "thursday": ["engine check vs $5k/$10k goal"],
+    "friday": [
+      "income tracking",
+      "pricing checks",
+      "upload receipts (Ibotta, Fetch, Checkout51, Merryfield, InboxDollars, Shopkick, Swagbucks, Super.com)"
+    ],
+    "saturday": ["CVS rebate shopping online"],
+    "sunday": ["CVS rebate shopping finish"],
+    "biweekly": [
+      "review Amazon/FB pricing",
+      "backup receipts to cloud"
+    ],
+    "monthly": [
+      "pay bills",
+      "Money Grower reconciliation",
+      "update Rhythm Keeper JSON (cycle day 1–3)"
+    ],
+    "annual": [
+      "tax season (V leads, Aida supports receipts/rebates)",
+      "prep docs January",
+      "review progress March",
+      "file April 15"
+    ]
+  },
+  "rebates": {
+    "beer": "upload as purchased",
+    "stocking_spree": "upload as purchased",
+    "pg": "upload as purchased"
+  },
+  "celebrations": {
+    "birthdays": {
+      "aida": {"date": "01-11", "tradition": "cozy + ocean swim if possible"},
+      "aidita": {"date": "05-23", "tradition": "big party, cupcakes for classmates"},
+      "family_day": {"date": "07-01", "tradition": "family celebration"},
+      "vicente": {"date": "12-02", "tradition": "restaurant dinner"}
+    },
+    "holidays": {
+      "new_years_day": {"date": "01-01", "tradition": "Carolina Beach hike"},
+      "valentines_day": {"date": "02-14", "tradition": "Aidita classroom cards"},
+      "mlk_day": {"rule": "3rd Monday January", "note": "school closed"},
+      "presidents_day": {"rule": "3rd Monday February", "note": "school closed"},
+      "international_womens_day": {"date": "03-08"},
+      "nauryz": {"dates": ["03-21", "03-22"], "tradition": "spring equinox holiday"},
+      "mothers_day": {"rule": "2nd Sunday May", "tradition": "greenhouse Monday"},
+      "fathers_day": {"rule": "3rd Sunday June"},
+      "july_4": {"date": "07-04", "tradition": "local fireworks"},
+      "labor_day": {"rule": "1st Monday September"},
+      "autumn_equinox": {"date": "09-22"},
+      "halloween": {"date": "10-31", "tradition": "costumes & treats"},
+      "thanksgiving": {"rule": "4th Thursday November"},
+      "christmas": {"date": "12-25"},
+      "summer_fireworks": {"recurrence": "weekly summer Thurs"},
+      "cape_fear_kite_festival": {"rule": "1st weekend November"},
+      "holiday_light_alternatives": {"prep": "late October"},
+      "airlie_enchanted": {"dates": "late Nov-Dec", "prep": "tickets mid-October"},
+      "holiday_flotilla": {"month": "November"},
+      "holiday_light_boat_parade": {"rule": "early December"},
+      "winter_solstice": {"date": "12-21"}
+    },
+    "religious": {
+      "ramadan": {"start": "2025-02-28", "end": "2025-03-30"},
+      "kurban_ayt": {"start": "2025-06-06", "end": "2025-06-10"}
+    },
+    "wedding_travel": {
+      "date": "2025-11-26",
+      "location": "The Estate at Florentine Gardens, River Vale, NJ",
+      "prep": [
+        "book travel September",
+        "book lodging October",
+        "outfits & gift early November",
+        "house prep 2 days before"
+      ]
+    },
+    "wilmington_events": {
+      "azalea_festival": {"month": "April"},
+      "riverfest": {"month": "October"},
+      "greenfield_lake_concerts": {"season": "summer"},
+      "pumpkin_patch": {"month": "October"},
+      "strawberry_picking": {"season": "spring", "location": "Lewis Farms"},
+      "blueberry_picking": {"season": "summer", "location": "Lewis Farms"},
+      "apple_picking": {"season": "Sept-Oct"}
+    }
+  }
+}
