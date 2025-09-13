@@ -286,5 +286,41 @@
       "blueberry_picking": {"season": "summer", "location": "Lewis Farms"},
       "apple_picking": {"season": "Sept-Oct"}
     }
+  },
+  "monthly_checklists": {
+    "rhythm_keeper": {
+      "timing": "cycle day 1–3",
+      "tasks": [
+        "Confirm medication + supplement stock; schedule refills",
+        "Review PT/OT focus and adjust if needed",
+        "Whole-house glance & rotate deep-clean areas",
+        "Schedule 1 big house task (quarterly anchor)",
+        "Check celebrations & holidays this month",
+        "Prep Aidita’s school events (costumes, treats, etc.)",
+        "Confirm business anchors (Amazon Wed, FB Fri, Dropship Tue/Thu)",
+        "Review inventory (Amazon + FB), check Turo cars",
+        "Update rhythm-keeper.json and archive snapshot",
+        "Plan 1 family fun anchor (Sunday)",
+        "Plan 1 self-care/rest anchor (Monday)"
+      ]
+    },
+    "money_grower": {
+      "timing": "cycle day 1–3",
+      "tasks": [
+        "Upload all receipts (Ibotta, Fetch, Checkout51, Merryfield, InboxDollars, Shopkick, Swagbucks, Super.com)",
+        "Upload branded receipts (Stocking Spree, P&G, Activate Rewards)",
+        "Check Aisle texts for unique vs overlapping offers",
+        "Confirm monthly limits on rebate redemptions",
+        "Review Rakuten referrals & bonuses",
+        "Check BeFrugal referral threshold toward cashout",
+        "Review Upside fuel credits & referrals",
+        "Review Amazon approved brands & ungating opportunities",
+        "Update FB Marketplace bundle pricing",
+        "Confirm Turo cars stocked with supplies",
+        "Track Venture X perks (travel credit, Priority Pass, anniversary miles)",
+        "Compare income vs $5k needs / $10k goal",
+        "Confirm all business streams active"
+      ]
+    }
   }
 }
