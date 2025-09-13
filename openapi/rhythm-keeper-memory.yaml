@@ -1,0 +1,135 @@
+openapi: 3.1.0
+info:
+  title: Rhythm Keeper – Memory Schema
+  version: 1.0.0
+  description: >
+    Schema for Rhythm Keeper memory. Defines how daily, weekly, monthly, and annual
+    rhythms are stored (cycle, meds, house care, business, finance, celebrations, etc.).
+
+paths: {}
+
+components:
+  schemas:
+    RhythmKeeper:
+      type: object
+      properties:
+        cycle_tracking:
+          type: object
+          properties:
+            last_period_start: { type: string, format: date }
+            cycle_length_days: { type: integer }
+            bleeding_days: { type: integer }
+            auto_calculate: { type: boolean }
+            override_option: { type: boolean }
+            phases:
+              type: object
+              properties:
+                menstrual: { type: string }
+                follicular: { type: string }
+                ovulatory: { type: string }
+                luteal: { type: string }
+
+        health_rhythm:
+          type: object
+          properties:
+            medications_supplements:
+              type: object
+              properties:
+                morning_empty_stomach: { type: array, items: { type: string } }
+                with_breakfast: { type: array, items: { type: string } }
+                midday_lunch: { type: array, items: { type: string } }
+                evening: { type: array, items: { type: string } }
+                bedtime: { type: array, items: { type: string } }
+            pt_ot:
+              type: object
+              properties:
+                baseline:
+                  type: object
+                  properties:
+                    frequency: { type: string }
+                    duration: { type: string }
+                    examples: { type: array, items: { type: string } }
+                assigned_focus:
+                  type: object
+                  properties:
+                    monday: { type: string }
+                    tuesday: { type: string }
+                    wednesday: { type: string }
+                    thursday: { type: string }
+                    friday: { type: string }
+                    saturday: { type: string }
+                    sunday: { type: string }
+
+        weekly_rhythm:
+          type: object
+          additionalProperties:
+            type: object
+            properties:
+              tasks: { type: array, items: { type: string } }
+
+        house_care_focus:
+          type: object
+          properties:
+            weekly_priority: { type: object, additionalProperties: { type: string } }
+            rotating_secondary: { type: object, additionalProperties: { type: string } }
+            monthly: { type: string }
+            prep_events:
+              type: object
+              properties:
+                before_school_breaks: { type: array, items: { type: string } }
+                before_travel: { type: array, items: { type: string } }
+                goal: { type: string }
+            post_travel: { type: array, items: { type: string } }
+
+        business_engines:
+          type: object
+          properties:
+            amazon:
+              type: object
+              properties:
+                fba_fbm:
+                  type: object
+                  properties:
+                    tasks: { type: object, additionalProperties: { type: array, items: { type: string } } }
+                digital_products:
+                  type: object
+                  properties:
+                    tasks: { type: object, additionalProperties: { type: array, items: { type: string } } }
+            facebook_marketplace:
+              type: object
+              properties:
+                tasks: { type: object, additionalProperties: { type: array, items: { type: string } } }
+            dropshipping:
+              type: object
+              properties:
+                tasks: { type: object, additionalProperties: { type: array, items: { type: string } } }
+            turo:
+              type: object
+              properties:
+                pre_rental: { type: array, items: { type: string } }
+                post_rental: { type: array, items: { type: string } }
+
+        finance_rhythm:
+          type: object
+          properties:
+            monday: { type: array, items: { type: string } }
+            thursday: { type: array, items: { type: string } }
+            friday: { type: array, items: { type: string } }
+            saturday: { type: array, items: { type: string } }
+            sunday: { type: array, items: { type: string } }
+            biweekly: { type: array, items: { type: string } }
+            monthly: { type: array, items: { type: string } }
+            annual: { type: array, items: { type: string } }
+
+        rebates:
+          type: object
+          additionalProperties: { type: string }
+
+        celebrations:
+          type: object
+          properties:
+            birthdays: { type: object, additionalProperties: { type: object, properties: { date: { type: string }, tradition: { type: string } } } }
+            holidays: { type: object, additionalProperties: { type: object, properties: { date: { type: string }, rule: { type: string }, month: { type: string }, recurrence: { type: string }, note: { type: string }, prep: { type: string }, tradition: { type: string } } } }
+            religious: { type: object, additionalProperties: { type: object, properties: { start: { type: string }, end: { type: string } } } }
+            wedding_travel: { type: object, properties: { date: { type: string }, location: { type: string }, prep: { type: array, items: { type: string } } } }
+            wilmington_events: { type: object, additionalProperties: { type: object, properties: { month: { type: string }, season: { type: string }, location: { type: string }, prep: { type: string } } } }
