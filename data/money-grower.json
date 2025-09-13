@@ -1,0 +1,90 @@
+{
+  "rebate_programs": {
+    "ibotta": {
+      "status": "active",
+      "notes": "link to Publix, Walmart, Target weekly deals",
+      "upload_flow": "receipts on Friday/Saturday"
+    },
+    "fetch": {
+      "status": "active",
+      "upload_flow": "scan all receipts daily"
+    },
+    "checkout51": {
+      "status": "active",
+      "notes": "focus on rare freebies/moneymakers"
+    },
+    "merryfield": {
+      "status": "active",
+      "notes": "upload natural/organic brand receipts"
+    },
+    "stocking_spree": {
+      "status": "active",
+      "link": "https://rewards.stockingspree.com/participating-products.php",
+      "upload_flow": "check before uploading"
+    },
+    "pg_rebates": {
+      "status": "active",
+      "link": "https://www.pggoodeveryday.com/rebates"
+    },
+    "activate_rewards": {
+      "status": "active",
+      "link": "https://www2.activaterewards.com/rewards"
+    },
+    "aisle_texts": {
+      "status": "active",
+      "notes": "track offers unique vs overlapping with Ibotta"
+    }
+  },
+
+  "cashback_referrals": {
+    "rakuten": {
+      "link": "https://www.rakuten.com/r/AIDAMA214?eeid=6991100",
+      "referral_bonus": "$30 after $30 spend"
+    },
+    "befrugal": {
+      "link": "https://www.befrugal.com/rs/ZKKUXTI/",
+      "referral_bonus": "$35 (after $20 cashout)"
+    },
+    "upside": {
+      "link": "https://upside.app.link/GWHUQR",
+      "promo_code": "GWHUQR",
+      "referral_bonus": "$20 per referral"
+    }
+  },
+
+  "marketplace_rules": {
+    "pricing_strategy": "consistent with past listings, inflation-adjusted",
+    "formatting": "bilingual EN/ES, emojis, bullet points, brand new & sealed",
+    "delivery": "local pickup near Monkey Junction, local delivery free"
+  },
+
+  "amazon_selling": {
+    "approved_brands": [
+      "Mod Podge", "Apple Barrel", "Neosporin", "FolkArt",
+      "Beadalon", "Welly", "Red Heart", "Amazon Basic Care",
+      "ALOHA", "Tulip", "Canson", "Offray", "Duck",
+      "Swingline", "HP Papers", "Ceaco", "Quality Park",
+      "Sourcebooks Wonderland", "Great Value"
+    ],
+    "restricted_brands": "most ungated requests denied except Parent’s Choice wipes",
+    "ungating_sources": ["Frontier Co-op"],
+    "budget": "$2,000–$5,000 for sourcing"
+  },
+
+  "credit_card_perks": {
+    "capital_one_venture_x": {
+      "annual_fee": 395,
+      "priority_pass": true,
+      "travel_credit": "$300",
+      "anniversary_miles": "10,000",
+      "goal": "track benefit usage to offset fee"
+    }
+  },
+
+  "financial_goals": {
+    "minimum_needs": 5000,
+    "goal_income": 10000,
+    "streams": ["Amazon reselling", "FB Marketplace", "Turo", "Consulting (V)", "Uber (V)"],
+    "notes": "shift time away from rebate chasing → scalable income"
+  }
+}
